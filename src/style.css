@@ -1,0 +1,49 @@
+body{
+	height:1400px;
+	background:linear-gradient(#2d545e,#e1b382);
+	display: flex;
+}
+
+
+.coutTime{
+	background: none;
+	border-color: black;
+	position: absolute;
+	font-size:240px;
+  	top: 200px; 
+  	left: 250px; 
+  	border-radius: 20px 20px 20px 20px ;
+    cursor: pointer;
+   animation: watch 2s forwards;
+}
+.coutDate{
+	background: none;
+	top:490px;
+	left:600px;
+	color:#c89666;
+	font-size: 50px;
+	position: absolute;
+	animation: show 2s forwards;
+}
+.coutTime:hover{
+	color:#c89666ab;
+}
+.coutTime:active{
+	color:#12343b;
+}
+
+
+.show{
+	animation: show 15s;
+}
+@keyframes watch{
+	0% {transform: translateY(-200%);opacity:-200%;}
+	100%{transform: translateY(0%);opacity:100%;}
+}
+@keyframes show{
+	0% {transform:translateY(-50%);opacity: 0;}
+  	100% {opacity: 1;}
+}
+
+
+
